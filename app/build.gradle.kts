@@ -10,6 +10,7 @@ android {
         }
         buildFeatures {
             viewBinding = true
+        }
     }
 
     defaultConfig {
@@ -21,7 +22,7 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         ndk {
-            abiFilters "armeabi, armeabi-v7a", "arm64-v8a"
+            abiFilters += listOf("armeabi-v7a", "arm64-v8a")
         }
     }
 
@@ -50,5 +51,4 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     implementation("com.kakaomobility.knsdk:knsdk_ui:1.12.7")
-
 }
