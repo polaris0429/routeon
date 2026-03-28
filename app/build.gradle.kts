@@ -50,4 +50,5 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     implementation("com.kakaomobility.knsdk:knsdk_ui:1.12.7")
+
 }
